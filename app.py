@@ -1,6 +1,8 @@
 import streamlit as st
 import requests
 
+IMAGE_PATH = '/Desktop/'
+
 #game introduction#
 st.title(":video_game: Voight Kampff :video_game:    :robot_face::vs::face_with_rolling_eyes: ")
 st.image("https://m.economictimes.com/thumb/msid-66752021,width-1200,height-900,resizemode-4,imgsize-98420/robot-touch.jpg")
@@ -45,15 +47,14 @@ if start:
 #display other user
 #make selection
 
-guess = st.button("guess")
-if guess:
-    option = st.selectbox(
-     'what do you think player B is?',
-     ('AI', 'Human'))
-    st.write('You selected:', option)
+
+option = st.selectbox( 'what do you think player B is?',('AI', 'Human'))
+st.write('You selected:', option)
 
 #announce the asnwer- picture+userid+roles
 reveal= st.button("reveal")
 if reveal:
-    # img_file = st.camera_input("Take a picture")
-    st.write("winner is",img_file)
+    img_file = st.camera_input("Take a picture")
+    # st.write("winner is",img_file)
+    with open(IMAGE_PATH, 'rd'):
+        pass
