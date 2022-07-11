@@ -1,5 +1,5 @@
 import streamlit as st
-# import requests
+import requests
 
 IMAGE_PATH = '/Desktop/'
 
@@ -28,13 +28,18 @@ st.markdown("""
 start = st.button("Play")
 if start:
     st.balloons()
-    st.write("game start")
+    url = "https://vktest-kr575za6oa-uw.a.run.app/response?"
+    payload_url = "https://vktest-kr575za6oa-uw.a.run.app/question"
+    payload_response = requests.get(payload_url).json()
+    payload = {"question": payload_response.get('question')}
+    answer = requests.get(url, params=payload).json()
+    ai_answer = answer.get('response')
+    # st.write({ai_answer})
     # request=requests.get(url).json()
     # # message=request[0]
     st.success("here is the message for you")
     with st.expander("check message"):
-        st.write("""message1
-             """)
+        st.title(ai_answer)
     st.success("let's fool them")
 
 #assign random role to user
