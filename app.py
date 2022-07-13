@@ -29,13 +29,18 @@ role=[]
 roles=random.choice(["AI","HUMAN"])
 role=roles
 url = "https://vktest-kr575za6oa-uw.a.run.app/response?"
+
 payload_url = "https://vktest-kr575za6oa-uw.a.run.app/question"
 payload_response = requests.get(payload_url).json()
 payload = {"question": payload_response.get('question')}
 answer = requests.get(url, params=payload).json()
 ai_answer = answer.get('response')
 
-question= str(payload_response.get('question')).rpartition('}')[0]
+# question= str(payload_response.get('question')).rpartition('}')[0]
+# quesion can replace the payload=> stephen can you check on this?
+# answer can be used to replace the ai answer
+
+question= str(payload_response.get('question'))
 givenanswer= ai_answer.rpartition('?')[2]
 print(question)
 print(givenanswer)
