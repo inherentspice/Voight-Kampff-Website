@@ -10,11 +10,12 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Mon Jul 11 20:43:26 2022
+# Make data base, printed on Wed Jul 13 19:26:58 2022
 
 # Variables
 
 # automatic
+ 
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
@@ -55,20 +56,21 @@ LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
 VIRTUAL_ENV = /Users/tiamac/.pyenv/versions/3.8.12/envs/Voight-Kampff-Website
 # environment
-LaunchInstanceID = 0DF399F0-682D-42CB-8FF5-DA62F08F1D71
+LaunchInstanceID = AFA85A40-459E-4C1D-8FB5-2D8C4601E54C
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
- 
 PYENV_ROOT = /Users/tiamac/.pyenv
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.UrhzcAovf4/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.nOg0k2EEy6/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-PWD = /Users/tiamac/code/inherentspice/Voight-Kampff-website
+all_proxy = socks5://127.0.0.1:7890
+# environment
+PWD = /Users/tiamac/code/inherentspice/Voight-Kampff-Website
 # environment
 HOMEBREW_CELLAR = /opt/homebrew/Cellar
 # environment
@@ -109,12 +111,13 @@ MAKECMDGOALS := all
 SHLVL = 3
 # default
 MAKE_VERSION := 3.81
+ 
 # environment
 USER = tiamac
 # makefile
 .DEFAULT_GOAL := install_requirements
 # environment
-TERM_SESSION_ID = 8091878F-087E-4C81-A702-C0608CBEB9CA
+TERM_SESSION_ID = 1F11AE31-B04B-4B6F-84B9-B8A70E55D3E2
 # environment
 LESS = -R
 # automatic
@@ -144,7 +147,7 @@ TERM_PROGRAM_VERSION = 445
 # environment
 NVM_DIR = /Users/tiamac/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.3105355.3105361.0B61B960-3CBF-40A4-B307-28C97A331C35
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.3105355.3105361.50511786-6DBF-4832-8A6B-80A8D22D23F4
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -162,6 +165,8 @@ MAKEFILES :=
 # automatic
 <F = $(notdir $<)
 # environment
+https_proxy = http://127.0.0.1:7890
+# environment
 EDITOR = code
 # environment
 PAGER = less
@@ -170,10 +175,9 @@ LC_ALL = C
 # environment
 PYENV_VIRTUALENV_DISABLE_PROMPT = 1
 # environment
- 
 PYENV_VIRTUAL_ENV = /Users/tiamac/.pyenv/versions/3.8.12/envs/Voight-Kampff-Website
 # environment
-SECURITYSESSIONID = 186b3
+SECURITYSESSIONID = 186b4
 # automatic
 ^F = $(notdir $^)
 # default
@@ -183,13 +187,15 @@ PYENV_VIRTUALENV_INIT = 1
 # environment
 MAKELEVEL := 0
 # environment
+http_proxy = http://127.0.0.1:7890
+# environment
 LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 3765
+VSCODE_PID = 556
 # variable set hash-table stats:
-# Load=86/1024=8%, Rehash=0, Collisions=2/109=2%
+# Load=89/1024=9%, Rehash=0, Collisions=2/112=2%
 
 # Pattern-specific Variable Values
 
@@ -219,6 +225,7 @@ all:
 install_requirements:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
+ 
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 7):
 	@pip install -r requirements.txt
@@ -313,6 +320,6 @@ install:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Jul 11 20:43:26 2022
+# Finished Make data base on Wed Jul 13 19:26:58 2022
 
  
