@@ -1,1 +1,0 @@
-{"buildTargets":["clean","deploy_heroku","heroku_create_app","heroku_login","install","install_requirements","streamlit"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
